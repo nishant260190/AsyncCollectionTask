@@ -64,7 +64,6 @@ static NSInteger const colItemCount = 3;
 //        StorySearchCollection *cellNode = [[StorySearchCollection alloc] initWithData:[self setOfImages] title:kTitle noOfPosts:kNoOfPost rowItemCount:(NSInteger)rowItemCount colItemCount:(NSInteger)colItemCount];
         StorySearchCollection *cellNode = [[StorySearchCollection alloc] initWithData:cellData[@"images"] title:cellData[@"title"] noOfPosts:cellData[@"noOfProducts"] rowItemCount:[cellData[@"imgX"] integerValue] colItemCount:[cellData[@"imgY"] integerValue]];
         cellNode.backgroundColor = [UIColor whiteColor];
-//        cellNode.delegate = self;
         return (id)cellNode;
     };
     
