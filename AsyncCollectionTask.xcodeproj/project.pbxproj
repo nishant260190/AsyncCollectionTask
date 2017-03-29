@@ -15,6 +15,10 @@
 		D6132F891E88D687006D44EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6132F871E88D687006D44EC /* LaunchScreen.storyboard */; };
 		D6132F941E88D688006D44EC /* AsyncCollectionTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6132F931E88D688006D44EC /* AsyncCollectionTaskTests.m */; };
 		D6132F9F1E88D688006D44EC /* AsyncCollectionTaskUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6132F9E1E88D688006D44EC /* AsyncCollectionTaskUITests.m */; };
+		D644468F1E891E5000210E7D /* StoryCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D644468E1E891E5000210E7D /* StoryCollectionCell.m */; };
+		D64446921E8928D800210E7D /* StorySearchCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D64446911E8928D800210E7D /* StorySearchCollection.m */; };
+		D64446951E8A8CAC00210E7D /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D64446941E8A8CAC00210E7D /* DataProvider.m */; };
+		DC2DDEC72A4A7866843241CA /* libPods-AsyncCollectionTask.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB3BB2B4926BB99C3BD9F8F1 /* libPods-AsyncCollectionTask.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3703EF3A6EB23866A7862E15 /* Pods-AsyncCollectionTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncCollectionTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncCollectionTask/Pods-AsyncCollectionTask.release.xcconfig"; sourceTree = "<group>"; };
+		BE6B5F8DCF421120489DDADB /* Pods-AsyncCollectionTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncCollectionTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncCollectionTask/Pods-AsyncCollectionTask.debug.xcconfig"; sourceTree = "<group>"; };
 		D6132F761E88D687006D44EC /* AsyncCollectionTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncCollectionTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6132F7A1E88D687006D44EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D6132F7C1E88D687006D44EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +57,13 @@
 		D6132F9A1E88D688006D44EC /* AsyncCollectionTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncCollectionTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6132F9E1E88D688006D44EC /* AsyncCollectionTaskUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AsyncCollectionTaskUITests.m; sourceTree = "<group>"; };
 		D6132FA01E88D688006D44EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D644468D1E891E5000210E7D /* StoryCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCollectionCell.h; sourceTree = "<group>"; };
+		D644468E1E891E5000210E7D /* StoryCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCollectionCell.m; sourceTree = "<group>"; };
+		D64446901E8928D800210E7D /* StorySearchCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorySearchCollection.h; sourceTree = "<group>"; };
+		D64446911E8928D800210E7D /* StorySearchCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorySearchCollection.m; sourceTree = "<group>"; };
+		D64446931E8A8CAC00210E7D /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
+		D64446941E8A8CAC00210E7D /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
+		FB3BB2B4926BB99C3BD9F8F1 /* libPods-AsyncCollectionTask.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AsyncCollectionTask.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2DDEC72A4A7866843241CA /* libPods-AsyncCollectionTask.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		836373D55F45B24CB76AAAD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE6B5F8DCF421120489DDADB /* Pods-AsyncCollectionTask.debug.xcconfig */,
+				3703EF3A6EB23866A7862E15 /* Pods-AsyncCollectionTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D7BFE9B225ABA9FDD5CFB59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB3BB2B4926BB99C3BD9F8F1 /* libPods-AsyncCollectionTask.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D6132F6D1E88D687006D44EC = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +116,8 @@
 				D6132F921E88D688006D44EC /* AsyncCollectionTaskTests */,
 				D6132F9D1E88D688006D44EC /* AsyncCollectionTaskUITests */,
 				D6132F771E88D687006D44EC /* Products */,
+				836373D55F45B24CB76AAAD8 /* Pods */,
+				8D7BFE9B225ABA9FDD5CFB59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +138,12 @@
 				D6132F7D1E88D687006D44EC /* AppDelegate.m */,
 				D6132F7F1E88D687006D44EC /* ViewController.h */,
 				D6132F801E88D687006D44EC /* ViewController.m */,
+				D64446901E8928D800210E7D /* StorySearchCollection.h */,
+				D64446911E8928D800210E7D /* StorySearchCollection.m */,
+				D64446931E8A8CAC00210E7D /* DataProvider.h */,
+				D64446941E8A8CAC00210E7D /* DataProvider.m */,
+				D644468D1E891E5000210E7D /* StoryCollectionCell.h */,
+				D644468E1E891E5000210E7D /* StoryCollectionCell.m */,
 				D6132F821E88D687006D44EC /* Main.storyboard */,
 				D6132F851E88D687006D44EC /* Assets.xcassets */,
 				D6132F871E88D687006D44EC /* LaunchScreen.storyboard */,
@@ -147,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6132FA31E88D688006D44EC /* Build configuration list for PBXNativeTarget "AsyncCollectionTask" */;
 			buildPhases = (
+				F56FD69131FFAEA44113DBB1 /* [CP] Check Pods Manifest.lock */,
 				D6132F721E88D687006D44EC /* Sources */,
 				D6132F731E88D687006D44EC /* Frameworks */,
 				D6132F741E88D687006D44EC /* Resources */,
+				5C130F5018029E7C3A4E2E94 /* [CP] Embed Pods Frameworks */,
+				A080C7898FA8687B6848FE62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,6 +249,7 @@
 				TargetAttributes = {
 					D6132F751E88D687006D44EC = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = R5384G48PW;
 						ProvisioningStyle = Automatic;
 					};
 					D6132F8E1E88D688006D44EC = {
@@ -268,13 +311,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5C130F5018029E7C3A4E2E94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AsyncCollectionTask/Pods-AsyncCollectionTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A080C7898FA8687B6848FE62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AsyncCollectionTask/Pods-AsyncCollectionTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56FD69131FFAEA44113DBB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6132F721E88D687006D44EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D6132F811E88D687006D44EC /* ViewController.m in Sources */,
+				D644468F1E891E5000210E7D /* StoryCollectionCell.m in Sources */,
 				D6132F7E1E88D687006D44EC /* AppDelegate.m in Sources */,
+				D64446921E8928D800210E7D /* StorySearchCollection.m in Sources */,
+				D64446951E8A8CAC00210E7D /* DataProvider.m in Sources */,
 				D6132F7B1E88D687006D44EC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,8 +514,10 @@
 		};
 		D6132FA41E88D688006D44EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE6B5F8DCF421120489DDADB /* Pods-AsyncCollectionTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5384G48PW;
 				INFOPLIST_FILE = AsyncCollectionTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Test.AsyncCollectionTask;
@@ -431,8 +527,10 @@
 		};
 		D6132FA51E88D688006D44EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3703EF3A6EB23866A7862E15 /* Pods-AsyncCollectionTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R5384G48PW;
 				INFOPLIST_FILE = AsyncCollectionTask/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Test.AsyncCollectionTask;
@@ -505,6 +603,7 @@
 				D6132FA51E88D688006D44EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6132FA61E88D688006D44EC /* Build configuration list for PBXNativeTarget "AsyncCollectionTaskTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +612,7 @@
 				D6132FA81E88D688006D44EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6132FA91E88D688006D44EC /* Build configuration list for PBXNativeTarget "AsyncCollectionTaskUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +621,7 @@
 				D6132FAB1E88D688006D44EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
